@@ -19,7 +19,7 @@ SELECT
     Orders.TotalCost AS Cost,
     Menus.MenuName,
     MenuItems.CourseName,
-    MenuItems.StarterName,
+    MenuItems.StarterName
 FROM 
     Customers
 INNER JOIN 
@@ -28,7 +28,7 @@ INNER JOIN
      Menus ON Orders.MenuID = Menus.MenuID
 INNER JOIN
      MenuItems ON Menus.MenuItemID = MenuItems.MenuItemID
-WHERE Cost > 150
+WHERE Orders.TotalCost > 150
 ORDER BY Cost; 
 
 ----------------------------------------------------
