@@ -65,7 +65,7 @@ DELIMITER //
 CREATE PROCEDURE AddValidBooking(IN date DATE, IN table_no INT, IN customer_id INT)
 BEGIN
     
-    DECLARE booking_status INT;
+    DECLARE booking_status VARCHAR(50);
 
     START TRANSACTION;
 
@@ -91,3 +91,5 @@ BEGIN
 END //
 
 DELIMITER ;
+call AddValidBooking("2022-10-11", 4, 4);
+DROP PROCEDURE AddValidBooking;
