@@ -1,4 +1,6 @@
+
 use LittleLemonDB;
+
 INSERT INTO `LittleLemonDB`.`Customers` (FullName, ContactNumber, Email) VALUES
 ('John Doe', '123-456-7890', 'john.doe@example.com'),
 ('Jane Smith', '234-567-8901', 'jane.smith@example.com'),

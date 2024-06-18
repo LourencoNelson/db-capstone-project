@@ -31,7 +31,7 @@ BEGIN
 END //
 
 DELIMITER ;
--- call CheckBooking("2022-10-12", 3);
+call CheckBooking("2022-10-12", 3);
 
 
 ----------------------------------------------------
@@ -70,5 +70,5 @@ END //
 
 DELIMITER ;
 
--- call AddValidBooking("2022-10-11", 4, 4);
+call AddValidBooking("2022-10-11", 4, 4);
 -- DROP PROCEDURE AddValidBooking;
